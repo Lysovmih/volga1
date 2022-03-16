@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Волга</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="35.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <span>Река Волга</span>
+        </div>
+        <div id="about">
+            <a href="index1.html">Видео</a>
+            <a href="index2.html">История</a>
+            <a href="index3.html">Интересные факты</a>
+            <a href="index4.html">Звуки</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Великая</h1>
+        <h3>русская река!</h3>
+    </div>
+    <div id="main">
+    <div class="intro">
+      <h2>Основные характеристики</h2>
+    </div>
+    <div class="text">
+      <ul>
+      <li>Длина	  3530 км</li>
+      <li>Бассейн	  1 360 000 км²</li>
+      <li>Высота	228 м</li>
+      <li>Уклон реки	0,07 м/км</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <h4> Сравнение с другими реками</h4>
+  <script type="text/javascript">
+  $(function() {
+
+  $("table tr:nth-child(odd)").addClass("odd-row");
+
+  $("table td:first-child, table th:first-child").addClass("first");
+
+  $("table td:last-child, table th:last-child").addClass("last");
+  });
+  </script>
+  <link rel='stylesheet' href='style.css' type='text/css' />
+  </head>
+  <body>
+  <div id="content">
+  <table cellspacing="0">
+  <tr>
+  <th>Название реки</th>
+  <th>Длина</th>
+  <th>Бассейн</th>
+  <th>Высота</th>
+  </tr>
+  <tr>
+  <td>Волга</td>
+  <td>3530 км</td>
+  <td>1 360 000 км²</td>
+  <td>228 м</td>
+  </tr>
+  <tr>
+  <td>Лена</td>
+  <td>4400 км</td>
+  <td>2 490 000 км²</td>
+  <td>1466 м</td>
+  </tr>
+  <tr>
+  <td>Амазонка</td>
+  <td>6400 км</td>
+  <td>7 180 000 км²</td>
+  <td>110 м</td>
+  </tr>
+  <tr>
+  <td>Миссисипи</td>
+  <td>3770 км</td>
+  <td>2 981 000 км²</td>
+  <td>530 м</td>
+  </tr>
+  <tr>
+  </table>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+    </script>
+</body>
+</html>
